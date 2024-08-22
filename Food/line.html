@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curved Line</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<style>
+    /* Curved Line using CSS */
+.curved-line {
+    width: 50px;              /* Width of the line */
+    height: 50px;              /* Height to create the curve */
+    border-top: 2px solid black; /* Color and thickness of the line */
+    border-radius: 0px 0px 100px 100px; /* Curving the top edge */
+    margin: 50px auto;          /* Centering the line on the page */
+    position: relative;
+}
+
+/* Optional: Adding shadow effect to give the curve more definition */
+.curved-line::before {
+    content: '';
+    position: absolute;
+    top: -10px;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 0px 0px 100px 100px;
+    border-top: 3px solid rgba(0, 0, 0, 0.3); /* Lighter shadow curve */
+}
+
+</style>
+<body>
+
+    <!-- Curved Line -->
+    <div class="curved-line"></div>
+
+</body>
+</html>

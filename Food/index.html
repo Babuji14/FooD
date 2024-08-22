@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Shantell+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Shantell+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+</head>
+<body>
+<section id="header">
+    <header class="header">
+        <div class="logo">
+            <h3>FooD</h3>
+        </div>
+        <nav class="ul-links">
+            <ul>
+                <li><a href="#about-restaurant">About</a></li>
+                <li><a href="#scroll-container">Restaurant</a></li>
+                <li><a href="#map-container">Map</a></li>
+            </ul>
+        </nav>
+
+        <div class="cart-btn" id="cart-icon">
+            <div class="cart-count">0</div>
+            <i class="fa-solid fa-cart-shopping"></i>
+        </div>
+
+        <div class="carts">
+            <div class="cart-title">Cart Items</div>
+            <div class="cart-content">
+                <!--Here add multiple items in cart
+
+                <div class="cart-box">
+                    <img src="dosa.jfif" alt="Dosa" class="cart-img">
+                    <div class="detail-box">
+                        <div class="cart-food-title">Dosa</div>
+                        <div class="price-box">
+                            <div class="cart-price">$2</div>
+                            <div class="cart-amt">$4</div>
+                        </div>
+                        <input type="number" value="1" class="cart-quantity">
+                    </div>
+                    <i class="fa-solid fa-trash" name="trash"></i>
+                </div>
+-->
+            </div>
+            <div class="total">
+                <div class="total-title">Total</div>
+                <div class="total-price">$0</div>
+            </div>
+            <button class="btn-buy">Place Order</button>
+            <i class="fa-solid fa-x" id="cart-close"></i>
+        </div>
+
+    </header>
+
+    <div class="header-container">
+        <div class="container-content">
+            <p>Best food in town</p>
+            <h3>Delivery Food From the Best Restaurants</h3>
+        </div>
+        <div class="header-img">
+            <img src="food.jpeg" alt="food.png">
+        </div>
+    </div>
+    
+</section>
+
+<!--Categories-->
+<section id="categories">
+    <div class="categories-container">
+        <div class="categories-content">
+            <p>Categories</p>
+            <h1>Popular Categories</h1>
+        </div>
+        <div class="category-list">
+            <ul>
+                <li><a href="#"><img src="pizza.png" alt="pizza.png"><span>Pizza</span><p>From $4</p></a></li>
+                <li><a href="#"><img src="burger.png" alt="burger.png"><span>Burger</span><p>From $3</p></a></li>
+                <li><a href="#"><img src="veg.png" alt="veg.png"><span>Vegetarian</span><p>From $5</p></a></li>
+                <li><a href="#"><img src="non-veg.png" alt="non-veg.png"><span>Non-Vegetarian</span><p>From $7</p></a></li>
+                <li><a href="#"><img src="bakery.png" alt="bakery.png"><span>Bakery</span><p>From $2</p></a></li>
+            </ul>
+        </div>
+    </div>
+</section>
+<!--Food-->
+<section id="scroll-container">
+    <h1 class="deals">Our Best Deals</h1>
+    <div class="scroll-container">
+        <div class="scroll-veg">
+            <p>Veg</p>
+            <button id="left-arrow" class="arrow"><i class="fa-solid fa-chevron-left"></i></button>
+            <div class="scroll-row" id="scroll-row">
+
+                <!-- Chilli Paneer -->
+                <div class="scroll-column" data-name="Chilli Paneer" data-price="3">
+                    <div class="pic">
+                        <img src="chilli-panner.jfif" alt="Chilli Paneer" class="food-img">
+                    </div>
+                    <h2 class="food-title">Chilli Paneer</h2>
+                    <div class="title">
+                        <span class="food-price">$3</span>
+                        <div class="order">Order Now</div>
+                        <span class="cart"><i class="fa-solid fa-cart-shopping"></i></span>
+                    </div>
+                </div>
+
+                <!-- Aloo Gopi -->
+                <div class="scroll-column" data-name="Aloo Gopi" data-price="3">
+                    <div class="pic">
+                        <img src="aloo-gopi.jfif" alt="Aloo Gopi" class="food-img">
+                    </div>
+                    <h2 class="food-title">Aloo Gopi</h2>
+                    <div class="title">
+                        <span class="food-price">$3</span>
+                        <div class="order">Order Now</div>
+                        <span class="cart"><i class="fa-solid fa-cart-shopping"></i></span>
+                    </div>
+                </div>
+
+                <!-- Dosa -->
+                <div class="scroll-column" data-name="Dosa" data-price="2">
+                    <div class="pic">
+                        <img src="dosa.jfif" alt="Dosa" class="food-img">
+                    </div>
+                    <h2 class="food-title">Dosa</h2>
+                    <div class="title">
+                        <span class="food-price">$2</span>
+                        <div class="order">Order Now</div>
+                        <span class="cart"><i class="fa-solid fa-cart-shopping"></i></span>
+                    </div>
+                </div>
+
+                <!-- Idly -->
+                <div class="scroll-column" data-name="Idly" data-price="3">
+                    <div class="pic">
+                        <img src="idly.jfif" alt="Idly" class="food-img">
+                    </div>
+                    <h2 class="food-title">Idly</h2>
+                    <div class="title">
+                        <span class="food-price">$3</span>
+                        <div class="order">Order Now</div>
+                        <span class="cart"><i class="fa-solid fa-cart-shopping"></i></span>
+                    </div>
+                </div>
+
+                <!-- Momos -->
+                <div class="scroll-column" data-name="Momos" data-price="4">
+                    <div class="pic">
+                        <img src="momos.jfif" alt="Momos" class="food-img">
+                    </div>
+                    <h2 class="food-title">Momos</h2>
+                    <div class="title">
+                        <span class="food-price">$4</span>
+                        <div class="order">Order Now</div>
+                        <span class="cart"><i class="fa-solid fa-cart-shopping"></i></span>
+                    </div>
+                </div>
+
+                <!-- Chapati -->
+                <div class="scroll-column" data-name="Chapati" data-price="3">
+                    <div class="pic">
+                        <img src="chapati.jfif" alt="Chapati" class="food-img">
+                    </div>
+                    <h2 class="food-title">Chapati</h2>
+                    <div class="title">
+                        <span class="food-price">$3</span>
+                        <div class="order">Order Now</div>
+                        <span class="cart"><i class="fa-solid fa-cart-shopping"></i></span>
+                    </div>
+                </div>
+
+                <!-- Mushroom Biriyani -->
+                <div class="scroll-column" data-name="Mushroom Biriyani" data-price="8">
+                    <div class="pic">
+                        <img src="mushroom-biriyani.jfif" alt="Mushroom Biriyani" class="food-img">
+                    </div>
+                    <h2 class="food-title">Mushroom Biriyani</h2>
+                    <div class="title">
+                        <span class="food-price">$8</span>
+                        <div class="order">Order Now</div>
+                        <span class="cart"><i class="fa-solid fa-cart-shopping"></i></span>
+                    </div>
+                </div>
+
+                <!-- Naan -->
+                <div class="scroll-column" data-name="Naan" data-price="4">
+                    <div class="pic">
+                        <img src="naan.jfif" alt="Naan" class="food-img">
+                    </div>
+                    <h2 class="food-title">Naan</h2>
+                    <div class="title">
+                        <span class="food-price">$4</span>
+                        <div class="order">Order Now</div>
+                        <span class="cart"><i class="fa-solid fa-cart-shopping"></i></span>
+                    </div>
+                </div>
+
+                <!-- Spring Rolls -->
+                <div class="scroll-column" data-name="Spring Rolls" data-price="6">
+                    <div class="pic">
+                        <img src="spring-rolls.jfif" alt="Spring Rolls" class="food-img">
+                    </div>
+                    <h2 class="food-title">Spring Rolls</h2>
+                    <div class="title">
+                        <span class="food-price">$6</span>
+                        <div class="order">Order Now</div>
+                        <span class="cart"><i class="fa-solid fa-cart-shopping"></i></span>
+                    </div>
+                </div>
+
+                <!-- Paneer -->
+                <div class="scroll-column" data-name="Paneer" data-price="4">
+                    <div class="pic">
+                        <img src="panner.jfif" alt="Paneer" class="food-img">
+                    </div>
+                    <h2 class="food-title">Paneer</h2>
+                    <div class="title">
+                        <span class="food-price">$4</span>
+                        <div class="order">Order Now</div>
+                        <span class="cart"><i class="fa-solid fa-cart-shopping"></i></span>
+                    </div>
+                </div>
+                
+            </div>
+            <button id="right-arrow" class="arrow"><i class="fa-solid fa-chevron-right"></i></button>
+        </div>
+
+        <!--Non-veg-->
+        <div class="scroll-nonveg">
+            <p>Non-Veg</p>
+            <button id="left" class="arrow"><i class="fa-solid fa-chevron-left"></i></button>
+            <div class="scroll-row-nonveg" id="scroll-row-nonveg">
+
+                <!-- Meat Balls -->
+                <div class="scroll-column" data-name="Meat Balls" data-price="5">
+                    <div class="pic">
+                        <img src="Meat Balls.jfif" alt="Meat Balls" class="food-img">
+                    </div>
+                    <h2 class="food-title">Meat Balls</h2>
+                    <div class="title">
+                        <span class="food-price">$5</span>
+                        <div class="order">Order Now</div>
+                        <span class="cart"><i class="fa-solid fa-cart-shopping"></i></span>
+                    </div>
+                </div>
+
+                <!-- Butter Chicken -->
+                <div class="scroll-column" data-name="Butter Chicken" data-price="7">
+                    <div class="pic">
+                        <img src="butter-chicken.jfif" alt="Butter Chicken" class="food-img">
+                    </div>
+                    <h2 class="food-title">Butter Chicken</h2>
+                    <div class="title">
+                        <span class="food-price">$7</span>
+                        <div class="order">Order Now</div>
+                        <span class="cart"><i class="fa-solid fa-cart-shopping"></i></span>
+                    </div>
+                </div>
+
+                <!-- Chicken Chettand -->
+                <div class="scroll-column" data-name="Chicken Chettand" data-price="20">
+                    <div class="pic">
+                        <img src="chicken-chettand.jfif" alt="Chicken Chettand" class="food-img">
+                    </div>
+                    <h2 class="food-title">Chicken Chettand</h2>
+                    <div class="title">
+                        <span class="food-price">$20</span>
+                        <div class="order">Order Now</div>
+                        <span class="cart"><i class="fa-solid fa-cart-shopping"></i></span>
+                    </div>
+                </div>
+
+                <!-- Fish Makhani -->
+                <div class="scroll-column" data-name="Fish Makhani" data-price="25">
+                    <div class="pic">
+                        <img src="Fish Makhani.jfif" alt="Fish Makhani" class="food-img">
+                    </div>
+                    <h2 class="food-title">Fish Makhani</h2>
+                    <div class="title">
+                        <span class="food-price">$25</span>
+                        <div class="order">Order Now</div>
+                        <span class="cart"><i class="fa-solid fa-cart-shopping"></i></span>
+                    </div>
+                </div>
+
+                <!-- Hyderabad Chicken Biriyani -->
+                <div class="scroll-column" data-name="Hyderabad Chicken Biriyani" data-price="30">
+                    <div class="pic">
+                        <img src="hy-chicken-biriyani.jfif" alt="Hyderabad Chicken Biriyani" class="food-img">
+                    </div>
+                    <h2 class="food-title">Hyderabad Chicken Biriyani</h2>
+                    <div class="title">
+                        <span class="food-price">$30</span>
+                        <div class="order">Order Now</div>
+                        <span class="cart"><i class="fa-solid fa-cart-shopping"></i></span>
+                    </div>
+                </div>
+
+                <!-- Mutton Curry -->
+                <div class="scroll-column" data-name="Mutton Curry" data-price="30">
+                    <div class="pic">
+                        <img src="mutton-curry.jfif" alt="Mutton Curry" class="food-img">
+                    </div>
+                    <h2 class="food-title">Mutton Curry</h2>
+                    <div class="title">
+                        <span class="food-price">$30</span>
+                        <div class="order">Order Now</div>
+                        <span class="cart"><i class="fa-solid fa-cart-shopping"></i></span>
+                    </div>
+                </div>
+
+                <!-- Chicken Spring Rolls -->
+                <div class="scroll-column" data-name="Chicken Spring Rolls" data-price="24">
+                    <div class="pic">
+                        <img src="Chicken spring rolls.jfif" alt="Chicken Spring Rolls" class="food-img">
+                    </div>
+                    <h2 class="food-title">Chicken Spring Rolls</h2>
+                    <div class="title">
+                        <span class="food-price">$24</span>
+                        <div class="order">Order Now</div>
+                        <span class="cart"><i class="fa-solid fa-cart-shopping"></i></span>
+                    </div>
+                </div>
+
+                <!-- Prawn Thokku -->
+                <div class="scroll-column" data-name="Prawn Thokku" data-price="35">
+                    <div class="pic">
+                        <img src="Prawn Thokku.jfif" alt="Prawn Thokku" class="food-img">
+                    </div>
+                    <h2 class="food-title">Prawn Thokku</h2>
+                    <div class="title">
+                        <span class="food-price">$35</span>
+                        <div class="order">Order Now</div>
+                        <span class="cart"><i class="fa-solid fa-cart-shopping"></i></span>
+                    </div>
+                </div>
+
+                <!-- Chicken Majestic -->
+                <div class="scroll-column" data-name="Chicken Majestic" data-price="38">
+                    <div class="pic">
+                        <img src="Chicken Majestic.jfif" alt="Chicken Majestic" class="food-img">
+                    </div>
+                    <h2 class="food-title">Chicken Majestic</h2>
+                    <div class="title">
+                        <span class="food-price">$38</span>
+                        <div class="order">Order Now</div>
+                        <span class="cart"><i class="fa-solid fa-cart-shopping"></i></span>
+                    </div>
+                </div>
+
+                <!-- Nethili Fish Fry -->
+                <div class="scroll-column" data-name="Nethili Fish Fry" data-price="24">
+                    <div class="pic">
+                        <img src="nethili fish fry.jfif" alt="Nethili Fish Fry" class="food-img">
+                    </div>
+                    <h2 class="food-title">Nethili Fish Fry</h2>
+                    <div class="title">
+                        <span class="food-price">$24</span>
+                        <div class="order">Order Now</div>
+                        <span class="cart"><i class="fa-solid fa-cart-shopping"></i></span>
+                    </div>
+                </div>
+
+            </div>
+            <button id="right" class="arrow"><i class="fa-solid fa-chevron-right"></i></button>
+        </div>
+    </div>
+</section>
+<!--About-->
+<section id="about-restaurant" class="about-restaurant">
+    <div class="content">
+      <h2>Our Story & Commitment</h2>
+      <p>Founded in 2010, our restaurant started with a simple mission: to serve mouth-watering meals crafted from the freshest ingredients, inspired by traditional family recipes. Over the years, we’ve grown from a humble kitchen to a cherished community hub. Whether it’s the spices we grind in-house or the locally sourced vegetables, every detail is a testament to our commitment to quality.</p>
+      <p>Our head chef, <strong>Chef Damodharan</strong>, brings over 15 years of experience to our kitchen, blending traditional flavors with modern techniques. Together with our dedicated team, Chef Damu ensures that every dish we serve reflects our love for food and our customers.</p>
+      <p>We believe in sustainability and supporting local farms, which is why we use only the freshest, locally sourced ingredients in all of our dishes.</p>
+      <p class="quote">“Cooking is not just about ingredients and recipes; it’s about memories and passion.” – Chef K.Damodharan</p>
+    </div>
+    
+    <div class="team">
+      <h2>Meet Our Team</h2>
+      <div class="team-member">
+        <div class="team-info">
+            <img src="damu.jfif" alt="Chef damu">
+            <h3>Chef Damu</h3>
+            <p>With a background in international cuisine, Damu is our creative sous chef, dedicated to bringing bold flavors and fresh ideas to the table.</p>
+        </div>
+      </div>
+      <div class="team-member">
+        <div class="team-info">
+            <img src="sara.jfif" alt="Chef Sarah">
+            <h3>Chef Sarah</h3>
+            <p>Our Head Chef, with over 15 years of culinary expertise. Sarah brings innovation and a love for traditional cuisine to every dish.</p>
+        </div>
+      </div>
+    </div>
+</section>
+<!--Map-->
+<section id="map-container">
+    <div class="map-container">
+        <div class="map-info">
+            <div class="map-content">
+                <div class="map-para">
+                    <h2>Check if Delivery is Available in Your Area</h2>
+                    <p>Before you place your order, check if we're delivering to your location! Simply enter your address or click on the map to find out if our delicious food can be delivered to your doorstep.</p>
+                </div>
+                <form>
+                    <label for="address">Enter Your Address</label>
+                    <input type="text" id="address" name="address" placeholder="e.g. 123 Main St">
+                    <br>
+                    <button type="button" class="check-btn">Check Availability</button>
+                    <button type="button" class="location-btn">Use My Current Location</button>
+                </form>
+                <div class="info">
+                    <p><strong>Note:</strong> We deliver fresh food to select areas. If we're not in your area yet, stay tuned as we're expanding our delivery zones!</p>
+                    <p>Ordering is available from <strong>10 AM to 10 PM daily.</strong></p>
+                </div>
+            </div>
+            <div class="map-section">
+                <div id="map">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3880.6173733957176!2d79.55070617405862!3d13.43599490452885!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a4d514b6e83fde9%3A0xdd52f412bf7fc6eb!2sKateeza%20Mandi%20Restaurant!5e0!3m2!1sen!2sin!4v1723888055435!5m2!1sen!2sin" width="500" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</section>
+<!--footer-->
+<section id="footer" class="footer">
+    <footer>
+        <div class="footer-container">
+            <div class="footer-content">
+                <div class="social-media">
+                    <h3>Social Media</h3>
+                    <ul>
+                        <li><a href="https://www.instagram.com/__babu.ji_/"><i class="fa-brands fa-instagram"></i></a></li>
+                        <li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
+                        <li><a href="#"><i class="fa-brands fa-x-twitter"></i></a></li>
+                        <li><a href="#"><i class="fa-brands fa-youtube"></i></a></li>
+                    </ul>
+                </div>
+                <div class="reference">
+                    <h3>References</h3>
+                    <ul>
+                        <li><a href="#about-restaurant">About</a></li>
+                        <li><a href="#scroll-container">Restaurant</a></li>
+                        <li><a href="#map-container">Map</a></li>
+                    </ul>
+                </div>
+                <div class="about-info">
+                    <h3>About</h3>
+                    <p>
+                        Our restaurant blends tradition with innovation, offering authentic, handcrafted dishes made from the freshest local ingredients. With over a decade of culinary expertise, we are committed to delivering exceptional flavors and memorable dining experiences. Whether it's your first visit or your hundredth, we treat every guest like family.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+</section>
+
+</body>
+<script src="script.js"></script>
+</html>
